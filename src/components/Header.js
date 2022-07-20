@@ -5,7 +5,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import AdbIcon from "@mui/icons-material/Adb";
+import YardIcon from "@mui/icons-material/Yard";
 
 
 const Header = (props) => {
@@ -16,7 +16,7 @@ const Header = (props) => {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          <YardIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
 
           <Typography
             variant="h6"
@@ -25,7 +25,7 @@ const Header = (props) => {
             href="/"
             sx={{
               mr: 2,
-              display: { xs: "none", md: "flex" },
+              display: { vmd: "flex" },
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
@@ -35,7 +35,7 @@ const Header = (props) => {
           >
             ALEX HAGEMAN
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ flexGrow: 1, display: { md: "flex" } }}>
               <Button
                 onClick={showAboutMeHandler}
                 sx={{ my: 2, color: "white", display: "block" }}
@@ -66,4 +66,5 @@ const Header = (props) => {
     </AppBar>
   );
 };
+
 export default Header;

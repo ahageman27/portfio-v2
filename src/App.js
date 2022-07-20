@@ -1,11 +1,11 @@
-import "./App.css";
+import "./style.css"
 
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Header from "./components/Header";
 import Porfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
-import { Component } from "react";
+import React, { Component } from "react";
 
 class App extends Component {
   state = {
@@ -59,10 +59,10 @@ class App extends Component {
       <>
         <Header />
         <div>
-          {(showAboutMe) && <AboutMe />}
-          {(showContact) && <Contact />}
-          {(showPortfolio) && <Porfolio />}
-          {(showResume) && <Resume />}
+          {showAboutMe && <AboutMe />}
+          {showContact && <Contact />}
+          {showPortfolio && <Porfolio />}
+          {showResume && <Resume />}
         </div>
       </>
     );
