@@ -2,25 +2,15 @@ import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
-import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 
-const pages = ["About Me", "Portfolio", "Contact", "Resume"];
 
-const Header = () => {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+const Header = (props) => {
 
-  const handleNavigation = (event) => {
-    setAnchorElNav(event.currentTarget.value);
-  };
+  const { showAboutMeHandler, showPortfolioHandler, showResumeHandler, showContactHAndler } = props;
 
   return (
     <AppBar position="static">
@@ -46,16 +36,30 @@ const Header = () => {
             ALEX HAGEMAN
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
               <Button
-                key={page}
-                onClick={handleNavigation}
+                onClick={showAboutMeHandler}
                 sx={{ my: 2, color: "white", display: "block" }}
-                value={page}
               >
-                {page}
+                About Me
               </Button>
-            ))}
+              <Button
+                onClick={showPortfolioHandler}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                Portfolio
+              </Button>
+              <Button
+                onClick={showResumeHandler}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                Resume
+              </Button>
+              <Button
+                onClick={showContactHAndler}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                Contact
+              </Button>
           </Box>
         </Toolbar>
       </Container>
