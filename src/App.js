@@ -1,11 +1,11 @@
 import "./style.css";
+import React, { useState } from "react";
 
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Header from "./components/Header";
-import Porfolio from "./components/Portfolio";
+import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
-import React, { useState } from "react";
 
 function App() {
   const [state, setState] = useState({
@@ -22,7 +22,6 @@ function App() {
       showResume: false,
       showContact: false,
     });
-    console.log(state);
   };
   const showPortfolioHandler = () => {
     setState({
@@ -31,7 +30,6 @@ function App() {
       showResume: false,
       showContact: false,
     });
-    console.log(state);
   };
   const showResumeHandler = () => {
     setState({
@@ -40,7 +38,6 @@ function App() {
       showResume: true,
       showContact: false,
     });
-    console.log(state);
   };
   const showContactHandler = () => {
     setState({
@@ -49,7 +46,6 @@ function App() {
       showResume: false,
       showContact: true,
     });
-    console.log(state);
   };
 
   return (
@@ -61,9 +57,9 @@ function App() {
         showContactHandler={showContactHandler}
       />
       {state.showAboutMe && <AboutMe />}
-      {state.showContact && <Contact />}
-      {state.showPortfolio && <Porfolio />}
+      {state.showPortfolio && <Portfolio />}
       {state.showResume && <Resume />}
+      {state.showContact && <Contact />}
     </>
   );
 }

@@ -12,7 +12,7 @@ const Header = ({
   showAboutMeHandler,
   showPortfolioHandler,
   showResumeHandler,
-  showContactHAndler,
+  showContactHandler,
 }) => {
   
   return (
@@ -58,7 +58,7 @@ const Header = ({
               Resume
             </Button>
             <Button
-              onClick={showContactHAndler}
+              onClick={showContactHandler}
               sx={{ my: 2, color: "white", display: "block" }}
             >
               Contact
