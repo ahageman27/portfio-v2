@@ -8,10 +8,13 @@ import Button from "@mui/material/Button";
 import YardIcon from "@mui/icons-material/Yard";
 
 
-const Header = (props) => {
-
-  const { showAboutMeHandler, showPortfolioHandler, showResumeHandler, showContactHAndler } = props;
-
+const Header = ({
+  showAboutMeHandler,
+  showPortfolioHandler,
+  showResumeHandler,
+  showContactHAndler,
+}) => {
+  
   return (
     <AppBar position="static">
       <Container maxWidth="xl">
@@ -36,30 +39,30 @@ const Header = (props) => {
             ALEX HAGEMAN
           </Typography>
           <Box sx={{ flexGrow: 1, display: { md: "flex" } }}>
-              <Button
-                onClick={showAboutMeHandler}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                About Me
-              </Button>
-              <Button
-                onClick={showPortfolioHandler}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                Portfolio
-              </Button>
-              <Button
-                onClick={showResumeHandler}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                Resume
-              </Button>
-              <Button
-                onClick={showContactHAndler}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                Contact
-              </Button>
+            <Button
+              onClick={showAboutMeHandler}
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+              About Me
+            </Button>
+            <Button
+              onClick={showPortfolioHandler}
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+              Portfolio
+            </Button>
+            <Button
+              onClick={showResumeHandler}
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+              Resume
+            </Button>
+            <Button
+              onClick={showContactHAndler}
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+              Contact
+            </Button>
           </Box>
         </Toolbar>
       </Container>
