@@ -1,26 +1,26 @@
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 
-import Project from "./Project/Project";
+import Project from "./Project";
 
-import fairWeather from "./Project/project-images/fair-weather-drinks-screenshot.jpg";
-import scrolloDeck from "./Project/project-images/scrollodeck-image.jpg";
-import recordStore from "./Project/project-images/record-store-screenshot.jpg";
+import fairWeather from "../images/fair-weather-drinks-image.jpg";
+import scrolloDeck from "../images/scrollodeck-image.jpg";
+import recordStore from "../images/record-store-image.jpg";
 
 const projects = [
   {
     title: "Fair Weather Drinks",
-    imageUrl: fairWeather,
+    imageUrl: `url(${fairWeather})`,
     url: "https://wolfe-nate.github.io/Fair-WeatherDrinks/",
   },
   {
     title: "ScrolloDeck",
-    imageUrl: scrolloDeck,
+    imageUrl: `url(${scrolloDeck})`,
     url: "",
   },
   {
     title: "Record Store",
-    imageUrl: recordStore,
+    imageUrl: `url(${recordStore})`,
     url: "",
   },
 ];
@@ -29,7 +29,7 @@ const Portfolio = (props) => {
   return (
     <Container>
       <Typography
-        variant="h6"
+        variant="h3"
         noWrap
         component="a"
         href="/"
@@ -47,8 +47,9 @@ const Portfolio = (props) => {
         PROJECTS
       </Typography>
       <Container className="d-flex flex-wrap justify-content-center">
-        {projects.map((project) => (
+        {projects.map((project, id) => (
           <Project
+            key={id}
             title={project.title}
             imageUrl={project.imageUrl}
             url={project.url}

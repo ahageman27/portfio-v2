@@ -8,7 +8,7 @@ const AboutMe = (props) => {
   return (
     <Container>
       <Typography
-        variant="h6"
+        variant="h3"
         noWrap
         component="a"
         href="/"
