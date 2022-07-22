@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.440b39fd.css",
+    "main.js": "/static/js/main.094b4e8e.js",
+    "static/media/scrollodeck-image.jpg": "/static/media/scrollodeck-image.932f0f3eb8260f4a34f2.jpg",
+    "static/media/record-store-image.jpg": "/static/media/record-store-image.6229b26ecc3a6f9a6eab.jpg",
+    "static/media/ProfilePic.jpg": "/static/media/ProfilePic.c1fb3ef714881bd2aca0.jpg",
+    "static/media/fair-weather-drinks-image.jpg": "/static/media/fair-weather-drinks-image.597752c84051e59225b5.jpg",
+    "index.html": "/index.html",
+    "main.440b39fd.css.map": "/static/css/main.440b39fd.css.map",
+    "main.094b4e8e.js.map": "/static/js/main.094b4e8e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.440b39fd.css",
+    "static/js/main.094b4e8e.js"
+  ]
+}
