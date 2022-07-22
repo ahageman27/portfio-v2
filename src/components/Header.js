@@ -7,16 +7,24 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import YardIcon from "@mui/icons-material/Yard";
 
-
 const Header = ({
   showAboutMeHandler,
   showPortfolioHandler,
   showResumeHandler,
   showContactHandler,
 }) => {
+
+const [value, setValue] = React.useState(0);
   
   return (
-    <AppBar position="static">
+    
+
+    <AppBar
+      onChange={(event, newValue) => {
+        setValue(newValue);
+      }}
+      position="static"
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <YardIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />

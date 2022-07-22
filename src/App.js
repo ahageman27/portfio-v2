@@ -1,11 +1,20 @@
 import "./style.css";
 import React, { useState } from "react";
 
+import styled from "styled-components";
+
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Header from "./components/Header";
 import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
+import Footer from "./components/Footer"
+
+const Container = styled.div`
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+`;
 
 function App() {
   const [state, setState] = useState({
@@ -60,6 +69,7 @@ function App() {
       {state.showPortfolio && <Portfolio />}
       {state.showResume && <Resume />}
       {state.showContact && <Contact />}
+      <Footer />
     </>
   );
 }
