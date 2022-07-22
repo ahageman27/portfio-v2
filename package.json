@@ -1,8 +1,8 @@
 {
   "name": "portfolio-v2",
   "version": "0.1.0",
-  "homepage": "https://ahageman27.github.io/portfolio-v2/",
-  "private": true,
+  "homepage": "https://ahageman27.github.io/",
+  "private": false,
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
