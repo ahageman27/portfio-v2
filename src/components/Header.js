@@ -13,18 +13,8 @@ const Header = ({
   showResumeHandler,
   showContactHandler,
 }) => {
-
-const [value, setValue] = React.useState(0);
-  
   return (
-    
-
-    <AppBar
-      onChange={(event, newValue) => {
-        setValue(newValue);
-      }}
-      position="static"
-    >
+    <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <YardIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />

@@ -3,3 +3,9 @@ body {
     background-color: lightcoral;
 }
 
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1976D2
+}

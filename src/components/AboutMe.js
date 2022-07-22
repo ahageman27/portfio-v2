@@ -29,9 +29,9 @@ const AboutMe = (props) => {
       <Grid
         container
         spacing={2}
-        sx={{ display: "flex", alignItems: "center" }}
+        sx={{ display: "flex", alignItems: "center", justifyContent: "center"}}
       >
-        <Grid item xs={12}>
+        <Grid item sm={12} md={4}>
           <Avatar
             alt="Alex Hageman"
             src={ProfilePic}
@@ -41,7 +41,7 @@ const AboutMe = (props) => {
             }}
           />
         </Grid>
-        <Grid item xs={12}>
+        <Grid item sm={12} md={8}>
           <Typography paragraph={true} sx={{ fontWeight: 500 }}>
             Hello! My name is Alex Hageman. I am a software developer currently
             based in Denver, Colorado. I just completed a Full Stack Web

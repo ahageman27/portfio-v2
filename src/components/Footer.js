@@ -1,26 +1,39 @@
-import React, { Component } from "react";
+import * as React from "react";
+import Box from "@mui/material/Box";
+import BottomNavigation from "@mui/material/BottomNavigation";
+import BottomNavigationAction from "@mui/material/BottomNavigationAction";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import EmailIcon from "@mui/icons-material/Email";
+import { Paper } from "@mui/material";
 
-import styled from "styled-components";
-import Typography from "@mui/material/Typography";
-
-const FooterContainer = styled.div`
-  bottom: 0;
-  width: 100% !important;
-  height: 50px !important ;
-  background: #1976d2;
-  display: flex;
-  min-height: 5vh;
-  flex-direction: column;
-`;
-
-class Footer extends Component {
-  render() {
-    return (
-      <FooterContainer>
-        <Typography variant="title">Footer Text</Typography>
-      </FooterContainer>
-    );
-  }
-}
+const Footer = () => {
+  return (
+    <Paper style={{ color: "primary" }}>
+      <Box>
+        <BottomNavigation id="footer">
+          <BottomNavigationAction
+            href="https://github.com/ahageman27"
+            label="GitHub"
+            style={{ color: "white" }}
+            icon={<GitHubIcon />}
+          />
+          <BottomNavigationAction
+            href="https://www.linkedin.com/in/alex-hageman-254157234"
+            label="Linkedin"
+            style={{ color: "white" }}
+            icon={<LinkedInIcon />}
+          />
+          <BottomNavigationAction
+            href="mailto:ahageman27@gmail.com"
+            label="Email"
+            style={{ color: "white" }}
+            icon={<EmailIcon />}
+          />
+        </BottomNavigation>
+      </Box>
+    </Paper>
+  );
+};
 
 export default Footer;
