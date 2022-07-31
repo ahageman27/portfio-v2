@@ -96,7 +96,7 @@ const Resume = (props) => {
           textDecoration: "none",
         }}
       >
-        <a href="#" download>
+        <a href="../resume/Resume2022.pdf" download>
           DOWNLOAD
         </a>
       </Typography>

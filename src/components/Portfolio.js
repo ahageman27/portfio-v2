@@ -5,7 +5,7 @@ import Project from "./Project";
 
 import fairWeather from "../images/fair-weather-drinks-image.jpg";
 import scrolloDeck from "../images/scrollodeck-image.jpg";
-import recordStore from "../images/record-store-image.jpg";
+import waterJugProblem from "../images/water-jug-problem-image.jpg";
 
 const projects = [
   {
@@ -19,9 +19,9 @@ const projects = [
     url: "https://dry-crag-90231.herokuapp.com/",
   },
   {
-    title: "Record Store",
-    imageUrl: `url(${recordStore})`,
-    url: "",
+    title: "Water Jug Problem",
+    imageUrl: `url(${waterJugProblem})`,
+    url: "https://github.com/ahageman27/water-jug-problem",
   },
 ];
 
