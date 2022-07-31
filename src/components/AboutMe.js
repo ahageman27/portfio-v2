@@ -4,7 +4,6 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import ProfilePic from "../images/ProfilePic.jpg";
 
-
 const AboutMe = (props) => {
   return (
     <Container>
@@ -29,7 +28,7 @@ const AboutMe = (props) => {
       <Grid
         container
         spacing={2}
-        sx={{ display: "flex", alignItems: "center", justifyContent: "center"}}
+        sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}
       >
         <Grid item sm={12} md={4}>
           <Avatar
@@ -45,8 +44,11 @@ const AboutMe = (props) => {
           <Typography paragraph={true} sx={{ fontWeight: 500 }}>
             Hello! My name is Alex Hageman. I am a software developer currently
             based in Denver, Colorado. I just completed a Full Stack Web
-            Development Bootcamp through University of Denver and learned a lot.
-            I love my cat, Magic the Gathering, and video games. My dream is to one day make an indie game.
+            Development Bootcamp through University of Denver covering all
+            aspects of web development and design in the modern age of the
+            internet. I also attended Metropolitan State Universtiy of Denver
+            for four semesters studying Computer Science. I love my cat, vinyl
+            records, and video games.
           </Typography>
         </Grid>
       </Grid>

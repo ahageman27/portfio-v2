@@ -16,7 +16,7 @@ const projects = [
   {
     title: "ScrolloDeck",
     imageUrl: `url(${scrolloDeck})`,
-    url: "",
+    url: "https://dry-crag-90231.herokuapp.com/",
   },
   {
     title: "Record Store",
