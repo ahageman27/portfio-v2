@@ -83,6 +83,7 @@ const Project = (props) => {
         focusRipple
         key={props.title}
         href={props.url}
+        target="_blank"
         style={{ width: "90%" }}
       >
         <ImageSrc style={{ backgroundImage: props.imageUrl }} />

@@ -61,6 +61,9 @@ const Resume = (props) => {
             <ListItemText primary="Python" />
           </ListItem>
           <ListItem disablePadding>
+            <ListItemText primary="HTML & CSS" />
+          </ListItem>
+          <ListItem disablePadding>
             <ListItemText primary="Object Oriented Programming" />
           </ListItem>
           <ListItem disablePadding>

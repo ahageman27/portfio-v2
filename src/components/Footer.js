@@ -14,18 +14,21 @@ const Footer = () => {
         <BottomNavigation id="footer">
           <BottomNavigationAction
             href="https://github.com/ahageman27"
+            target="_blank"
             label="GitHub"
             style={{ color: "white" }}
             icon={<GitHubIcon />}
           />
           <BottomNavigationAction
             href="https://www.linkedin.com/in/alex-hageman-254157234"
+            target="_blank"
             label="Linkedin"
             style={{ color: "white" }}
             icon={<LinkedInIcon />}
           />
           <BottomNavigationAction
             href="mailto:ahageman27@gmail.com"
+            target="_blank"
             label="Email"
             style={{ color: "white" }}
             icon={<EmailIcon />}
