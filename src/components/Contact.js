@@ -93,6 +93,24 @@ const Contact = (props) => {
               Submit
             </Button>
           </Card>
+          <Typography
+            variant="h4"
+            noWrap
+            component="a"
+            href="/"
+            sx={{
+              m: 5,
+              display: "flex",
+              justifyContent: "center",
+              fontFamily: "monospace",
+              fontWeight: 700,
+              letterSpacing: ".3rem",
+              color: "inherit",
+              textDecoration: "none",
+            }}
+          >
+            ahageman27@gmail.com
+          </Typography>
         </form>
       )}
       {toSend.submitted && (
