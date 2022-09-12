@@ -10,18 +10,19 @@ import waterJugProblem from "../images/water-jug-problem-image.jpg";
 const projects = [
   {
     title: "Fair Weather Drinks",
-    imageUrl: `url(${fairWeather})`,
-    url: "https://wolfe-nate.github.io/Fair-WeatherDrinks/",
+    imageUrl: `${fairWeather}`,
+    deployedUrl: "https://wolfe-nate.github.io/Fair-WeatherDrinks/",
   },
   {
     title: "ScrolloDeck",
-    imageUrl: `url(${scrolloDeck})`,
-    url: "https://dry-crag-90231.herokuapp.com/",
+    imageUrl: `${scrolloDeck}`,
+    deployedUrl: "https://dry-crag-90231.herokuapp.com/",
   },
   {
     title: "Water Jug Problem",
-    imageUrl: `url(${waterJugProblem})`,
-    url: "https://github.com/ahageman27/water-jug-problem",
+    imageUrl: `${waterJugProblem}`,
+    deployedUrl: "https://github.com/ahageman27/water-jug-problem",
+    githubUrl: "https://github.com/ahageman27/water-jug-problem",
   },
 ];
 

@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
 import { Button } from "@mui/material";
+import { margin } from "@mui/system";
 
 
 // const ImageButton = styled(ButtonBase)(({ theme }) => ({
@@ -72,6 +73,7 @@ import { Button } from "@mui/material";
 const Project = (props) => {
   return (
     <Box
+      id="margin-auto"
       sx={{
         display: "flex",
         justifyContent: "center",
@@ -80,11 +82,26 @@ const Project = (props) => {
         width: "100%",
       }}
     >
-      <Button
-        href="props.url"
-      >
-          {props.title}
-        </Button>
+      <br></br>
+      <Button color="secondary" variant="contained"
+      sx={{
+        width: "100%",
+        margin: 1
+      }}>
+        {props.title}
+      </Button>
+      <img src={props.imageUrl} 
+        sx={{
+          width: "100%"
+        }}
+      ></img>
+      <Button color="secondary" variant="contained"
+      sx={{
+        width: "30%",
+        margin: 1
+      }}>
+        Github
+      </Button>
     </Box>
   );
 };

@@ -9,7 +9,7 @@ import { Paper } from "@mui/material";
 
 const Footer = () => {
   return (
-    <Paper style={{ color: "primary" }}>
+    <Paper style={{ color: "primary" }} id="margin-dense">
       <Box>
         <BottomNavigation id="footer">
           <BottomNavigationAction
