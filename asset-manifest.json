@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio-v2/static/css/main.0662ef70.css",
-    "main.js": "/portfolio-v2/static/js/main.fcaddbca.js",
-    "static/media/scrollodeck-image.jpg": "/portfolio-v2/static/media/scrollodeck-image.932f0f3eb8260f4a34f2.jpg",
-    "static/media/record-store-image.jpg": "/portfolio-v2/static/media/record-store-image.6229b26ecc3a6f9a6eab.jpg",
-    "static/media/ProfilePic.jpg": "/portfolio-v2/static/media/ProfilePic.c1fb3ef714881bd2aca0.jpg",
-    "static/media/fair-weather-drinks-image.jpg": "/portfolio-v2/static/media/fair-weather-drinks-image.597752c84051e59225b5.jpg",
-    "index.html": "/portfolio-v2/index.html",
-    "main.0662ef70.css.map": "/portfolio-v2/static/css/main.0662ef70.css.map",
-    "main.fcaddbca.js.map": "/portfolio-v2/static/js/main.fcaddbca.js.map"
+    "main.css": "/static/css/main.0662ef70.css",
+    "main.js": "/static/js/main.a4a0549e.js",
+    "static/media/ProfilePic.jpg": "/static/media/ProfilePic.7e4f6cb4f4df07e56c52.jpg",
+    "static/media/water-jug-problem-image.jpg": "/static/media/water-jug-problem-image.e30b9552746b3240bf8c.jpg",
+    "static/media/scrollodeck-image.jpg": "/static/media/scrollodeck-image.55bc5e7433d66d2e24b4.jpg",
+    "static/media/fair-weather-drinks-image.jpg": "/static/media/fair-weather-drinks-image.3f648cf9c119260bcb10.jpg",
+    "index.html": "/index.html",
+    "main.0662ef70.css.map": "/static/css/main.0662ef70.css.map",
+    "main.a4a0549e.js.map": "/static/js/main.a4a0549e.js.map"
   },
   "entrypoints": [
     "static/css/main.0662ef70.css",
-    "static/js/main.fcaddbca.js"
+    "static/js/main.a4a0549e.js"
   ]
 }
