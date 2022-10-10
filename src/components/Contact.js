@@ -21,7 +21,7 @@ const Contact = (props) => {
     send("service_ani098t", "template_cwyzmvm", toSend, "B487RaQZlpEvVEY3C")
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
-        setToSend(toSend.submitted = true);
+        setToSend({submitted: true});
       })
       .catch((err) => {
         console.log("FAILED...", err);
