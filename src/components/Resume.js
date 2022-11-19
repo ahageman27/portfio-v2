@@ -5,6 +5,7 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import { BrowserRouter as Router, Link } from "react-router-dom";
+import resumePDF from "../resume/AlexHagemanResume.pdf"
 const Resume = (props) => {
   return (
     <Router>
@@ -100,7 +101,7 @@ const Resume = (props) => {
             textDecoration: "none",
           }}
         >
-          <a href="../../public/resume/AlexHagemanResume.pdf" target="_blank" download>
+          <a href={resumePDF} target="_blank" download>
             Download
           </a>
         </Typography>
